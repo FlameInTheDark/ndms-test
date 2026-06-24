@@ -9,7 +9,7 @@ go run ./cmd/mq
 
 Run with custom URL and Port:
 ```shell
-go run ./cmd/mq -url loclhost:8081
+go run ./cmd/mq -url localhost:6000
 ```
 
 ## Usage
@@ -29,6 +29,5 @@ curl --request GET \
 Produce message:
 ```shell
 curl --request POST \
-  --url http://localhost:8080/pet \
-  --data dog
+  --url 'http://localhost:8080/pet?v=dog'
 ```
